@@ -1,0 +1,23 @@
+run-title: CPPN-MNIST-ACGAN-1
+
+path: /home/bkhmsi/Documents/Datasets/Quickdraw
+
+train:
+  epochs: 5000
+  batch-size: 60
+  save-interval: 50
+
+  z-dim: 128
+  c-dim: 128
+  x-dim: 28
+  y-dim: 28
+  scale: 10.
+
+  imchannels: 1
+  num-classes: 10
+
+generate:
+  x-dim: 512
+  y-dim: 512
+  n-samples: 3
+  weights-path: weights/cgenerator-weights.4000.h5
